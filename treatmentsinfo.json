@@ -1,0 +1,58 @@
+{
+	"treatments":
+	[
+		{
+			"title":"Swedish Massage",
+			"tag":"Revitalise your senses & refresh your mind!",
+			"image":"swedish-massage.jpg",
+			"caption":"Swedish massage is the most common and best-known type of massage in the West. If it's your first time at the spa or you don't get massage often, Swedish massage is the best place to start.",
+			"description":"Swedish massage is the most commonly offered &amp best-known type of massage. <br><br> If it’s your first time receiving massage, Swedish massage is the perfect place to start. Designed to improve your circulation, soothe your muscles &amp make you more relaxed. <br><br> Swedish massage involves deep pressure applied to meet an individual’s specific needs &amp preferences &amp a variety of intensive massage techniques such as kneading, tapping &amp stroking.",
+			"prices":
+			{
+				"60mins":50,
+				"40mins":35,
+				"30mins":25
+			}
+		},
+		{
+			"title":"Deep Tissue Massage",
+			"tag":"",
+			"image":"deep-tissue.jpg",
+			"caption":"",
+			"description":"This massage uses slow movement, deep pressure, and friction to realign muscles and connective tissues.<br><br>The therapist focuses on areas of pain and tension using fingers, hands, elbows and works to \"break up\" the tension, or \"knots,\" in muscles, providing greater freedom of movement. <br><br> The muscle tissue is stretched and separated, providing for better circulation of blood.",
+			"prices":
+			{
+				"60mins":55,
+				"40mins":40,
+				"30mins":30
+			}
+		},
+		{
+			"title":"Cupping Massage",
+			"tag":"Stimulate your body's energy flow for revitalisation!",
+			"image":"cupping.jpg",
+			"caption":"",
+			"description":"Cupping is a therapy used in traditional Chinese medicine to remove stagnation and stimulate the flow of qi (chi). <br><br>Qi is the free flow of vital energy circulating through the body and the world around us, if the qi is disrupted or disturbed, it can create stagnation (blockages) or imbalances in the body.<br><br>Cupping has numerous benefits — it can help remove toxins from the body and stimulate the flow of fresh blood, lymph, and Qi to the affected area and throughout the body. <br><br>It often works wonders for patients with the flu, colds, coughs, back and muscle pain, poor circulation, anxiety, red itchy skin conditions , allergies, fevers, aches and myriad other pains",
+			"prices":
+			{
+				"60mins":55,
+				"40mins":40,
+				"30mins":30
+			}
+		},
+		{
+			"title":"Hot Stone Massage",
+			"tag":"Melts away tension, eases muscle stiffness and increases circulation and metabolism",
+			"image":"hotstone.jpg",
+			"caption":"",
+			"description":"The premise behind hot stone massage therapy is that the direct heat of the stones relaxes muscles, allowing the therapist access to their deeper muscle layers. <br><br>Combining hot stone protocols with a full body massage provides a very healing and effective experience. <br><br>The hot stones also expand blood vessels, which encourages blood flow throughout the body. The hot stones have a sedative effect that can relieve chronic pain, reduce stress and promote deep relaxation.<ul class='hotstone-benefits'><h3>Benefits of Hot Stone:</h3><li>Provides relief from pain associated with fibromyalgia, arthritis, carpal tunnel syndrome and other chronic conditions</li><li>Decreases pain and muscle spasms</li><li>Reduces chronic stress and tension</li><li>Increases flexibility in joints, aiding in easier mobility and movement</li><li>Relieves pain and tension created by strained and contracted muscle</li></ul>",
+			"prices":
+			{
+				"60mins":55,
+				"40mins":40,
+				"30mins":30
+			}
+		}
+		
+	]
+}

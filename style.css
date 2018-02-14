@@ -1,0 +1,1661 @@
+/*
+Theme Name: Magic
+Theme URI: http://mariamagichands.ie/wp-content/themes/magic
+Description: This is a custom theme I have created.
+Author: Rob Connolly
+Author URI: http://mysite.com/
+
+Version: 0.1
+*/
+
+@font-face {
+    font-family: Champagne;
+    src: url(http://mariamagichands.ie/wp-content/themes/magic/fonts/Champagne.ttf);
+  
+}
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Eagle+Lake);
+button 
+{
+	
+	background-color: transparent;
+	border: none;
+	font-family: inherit;
+	padding:.25em;
+}
+.center 
+{
+	margin:0 auto;
+}
+.container
+{
+	width: 100%;
+	padding: 0;
+	display: inline-block;	
+}
+
+/*DEFAULT STYLES RESET*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	
+
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+
+}
+ol, ul {
+	list-style: none;
+}
+li
+{
+	font-family: 'Champagne', sans-serif;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a 
+{
+	text-decoration: none;
+}
+.row 
+{
+
+}
+.hidden 
+{
+	visibility: hidden;
+}
+body 
+{
+	/*background-color: #af97e8;*/
+	font-family: 'Champagne', sans-serif;
+	height: 100%;
+	width: 100%;  
+    box-sizing:border-box;
+    text-align: center;
+    color: #fff;
+}
+
+/*HEADINGS*/
+/*ALTERNATE DARK COLOR FOR TEXT --> #4d004d*/
+/*FONT STYLES*/
+h1 
+{
+	font-size: 5em;
+}
+h2 
+{
+	font-size:2.5em;
+	margin-bottom: .5em;
+}
+
+h3 
+{
+	font-size: 1.75em;
+	margin-bottom: 1em;
+}
+h4
+{ 
+	color: #fff;
+	font-size: 1.25em;
+}
+p
+{
+	font-size: 1em;
+}
+.tagline-info /*TAG UNDER H2 ELEMENTS (FRONT PAGE)*/
+{
+	font-size: 1.5em;
+	margin: 0 auto 1em auto;
+	text-align: center;
+	width: 80%;
+
+}
+.tagline-info a
+{
+	color: #ff93f3;
+	text-decoration: none; 
+}
+a:hover
+{
+	color: #068bfc;
+	text-shadow:0px 0px 20px 10px #fff;
+}
+img 
+{
+	width: 100%;
+	height: auto;		
+}
+
+nav 
+{
+	width:100%;	
+	text-align:center;
+	background-color:rgba(108, 0, 108, .9);
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	padding: 0;
+}
+#breadcrumbs
+{
+	text-align: left;
+	float: left;
+	display: inline-block;
+	width: 20%;
+	z-index: 999999;
+}
+#banner
+{
+	margin: 3em;
+
+
+}
+#request
+{
+	color: #fff;
+	padding: .5em;
+	border: 1px solid #fff;
+	display: inline-block;
+	margin: 3em auto;
+}
+#request a
+{
+	color: #fff;
+}
+#wrapper
+{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+#landing-panel
+{
+	height: 100vh;
+}
+body
+{
+	background-image: url(img/bg-stones-lg.jpg);
+	background-position: top center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+
+/*PRIMARY HEADER NAVIGATION*/
+
+ul#menu-primary-navigation
+{
+	padding: .5em 0;
+}
+
+ul#menu-primary-navigation li 
+{
+	display: inline-block;
+	padding:0 1.5em;
+	font-family: 'Champagne', sans-serif;
+	font-size: 1.25em;
+}
+ul#menu-primary-navigation li a 
+{
+	color: #ffffff;
+}
+#menu-bars 
+{
+	position: absolute;
+	right: .5em;
+	top:.5em;
+	color:white;	
+}
+.navbar-toggle
+{
+	padding: 0;
+}
+.icon-bars
+{
+
+	color: #fff;
+}
+
+
+
+/* LOGO */
+
+#logo
+{
+	max-width: 500px;
+	margin: 1em auto;
+}
+.logo-img
+{
+	width: 100%;
+}
+p#logo-tag
+{
+	margin-top: 1.6em;
+	font-size: 1.5em;
+}
+/*MAIN*/
+
+#content
+{
+	margin: 3em 0 0 0;
+	width: 90%;
+	margin: 0 auto;
+}
+
+/* FEATURED TREATMENTS */
+
+#features
+{
+	width: 100%;
+	display: inline-block;
+	margin: 0 auto;
+	opacity: 1;
+	background-color: rgba(108,0,108,0);
+}
+.feature 
+{
+	position: relative;
+	min-height: 250px;
+	width: 32%;	
+	display: inline-block;
+	margin-top: .25em;
+	color: #ffffff;
+	box-sizing:border-box;
+	vertical-align: top;
+	border: 1px solid #984bad;
+}
+.feature-inner
+{
+	padding: .5em;
+	width: 100%;
+	height: 100%;
+	min-height: 250px;
+	background-color: rgba(255,255,255,.8);
+
+}
+
+.feature-txt-container
+{
+	min-height: 80px;
+
+}
+.feature-inner h3
+{
+	
+	color: #4d004d;
+	margin: 1em auto;
+}
+.feature-txt-container p
+{
+	padding-top: 1em;
+	font-size: 1em;
+	color: #4d004d;
+}
+a.feature-link
+{
+	color: #984bad;
+	margin-top: 1em; 
+	font-family: 'Champagne';
+	font-size: 1.25em;	
+	padding: 1%;
+}
+.feature-link span
+{
+	margin-right: .25em;
+}
+
+/*.treatment-btn 
+{
+	background-color: transparent;
+	font-family: 'Comfortaa', cursive;
+	font-size: 1em;
+	color: #4d004d;
+}*/
+.treatment-btn-container 
+{
+	margin:0 auto;
+}
+#massage
+{
+	background-image: url(img/massage-3-640x240.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#waxing
+{
+	background-image: url(img/waxing.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#cupping
+{
+	background-image: url(img/cupping.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#pedicure
+{
+	background-image: url(img/pedicure.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#facial
+{
+	background-image: url(img/microderma.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#eyes
+{
+	background-image: url(img/eyebrow-tinting.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+/* POPULAR TREATMENTS */
+
+.treatment-section
+{
+	padding-top: 3em;
+}
+section#body-treatments
+{
+	
+}
+#body-treatments h2 
+{
+	
+}
+.treatment-wrapper
+{
+	width: 100%;
+	display: inline-block;
+	padding: 1em 0 3em 0;
+}
+#treatment-container a 
+{
+	color: rgba(100,0,100,1);
+}
+.treatment-container
+{
+	/*width: 95%;*/
+    margin: 0 auto;
+    position: relative;   
+    text-align: center;
+    /*display: inline-block; */    
+}
+
+.heading-container h3
+{
+	font-family: 'Champagne', sans-serif;
+	font-size: 1.5em;
+	padding: 0;
+	color: #fff;
+}
+.treatment-row
+{
+	width: 100%;
+	display: inline-block;
+
+}
+.treatment-col
+{
+	height: 100%;
+	width: 50%;
+	display:inline-block;
+	float: left;
+	padding: .5em;
+
+}
+
+.item-container 
+{	
+	width: 100%;
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;	
+	
+}
+/**/
+.item-container ul li
+{
+	font-size: .75em;
+	margin: 1em;
+}
+.item-container .heading-container
+{
+	padding-top: 2em;
+	color: #fff;
+}
+.text-content 
+{
+
+	box-sizing:border-box;
+	min-height: 350px;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	background-color: rgba(108,0,108,.7);
+	display: inline-block;
+	padding: 1em;
+}
+.text
+{
+	text-align: center;
+	margin: 0 auto;
+	min-height: 200px;
+}
+
+.text ul 
+{
+	display: inline-block;
+	margin: 1em auto;
+	list-style: none;
+	padding-left: .5em;
+	text-align: center;
+}
+.text ul li
+{
+	font-size: 1em;
+	padding-left: .5em;
+	padding-top: 1em; 
+	/*display: inline-block;*/
+	/*float: left;*/
+}
+.treatment-link
+{
+	font-size: 1.25em;
+	font-family: 'Champagne';
+	display: block;
+	margin-top: 1em;
+	color: #fff;
+}
+.treatment-link a
+{
+	text-decoration: none;
+	color: #fff;
+	font-size: .75em;
+}
+.price-reveal
+{
+	border: 1px solid #fff;
+	font-family: 'Champagne', sans-serif;
+	color: #fff;
+	background-color: transparent;
+	/*margin: .5em auto;
+	padding: .25em;*/
+	font-size: 1em;
+}
+#swedish-massage 
+{
+	background-image: url(img/massage-sample-3.jpg);
+	
+
+}
+#deep-tissue-massage 
+{
+	background-image: url(img/massage-sample-4.jpg);
+	
+
+}
+#indian-head-massage 
+{
+	background-image: url(img/massage-sample-5.jpg);
+	
+
+}
+#pregnancy-massage 
+{
+	background-image: url(img/massage-sample-1.jpg);
+	
+
+}
+#hot-stone-massage 
+{
+	background-image: url(img/hotstone.jpg);
+	
+
+}
+#deep-tissue-cupping 
+{
+	background-image: url(img/cupping.jpg);
+	
+
+}
+#cupping-magnet-therapy-massage 
+{
+	background-image: url(img/cupping.jpg);
+	
+
+}
+#microderma-facial
+{
+	background-image: url(img/microderma.jpg);
+	
+
+}
+#deep-cleansing
+{
+	background-image: url(img/deep-cleansing.jpg);
+	
+
+}
+#hydrating-facial
+{
+	background-image: url(img/hydrating.jpg);
+	
+
+}
+#mini-facial
+{
+	background-image: url(img/mini-facial.jpg);	
+}
+#lower-leg-foot-massage
+{
+	background-image: url(img/lower-leg.jpg);
+}
+#microderma-pedicure
+{
+	background-image: url(img/microderma-pedicure.jpg);
+}
+#regular-pedicure
+{
+	background-image: url(img/pedicure.jpg);
+}
+#deluxe-pedicure
+{
+	background-image: url(img/deluxe-pedicure.jpg);
+}
+#waxing
+{
+	background-image: url(img/deluxe-pedicure.jpg);
+}
+
+#waxing-container .treatment-col
+{
+	width: 33%;
+}
+#eye-treatments
+{
+
+}
+#eye-treatments .treatment-col.eye-treatments
+{
+	width: 60%;
+	display:block;
+	float: none;
+	margin: 0 auto;
+}
+#table-container 
+{
+	display: inline-block;
+	/*width: 50%;*/
+	float: left;
+}
+table
+{
+	margin: 2em 1em 2em 0;
+}
+th
+{
+	text-align: left;
+	padding: .25em;
+	margin-right: 2em;
+}
+.prices
+{
+	display: inline-block;
+}
+
+/*VOUCHERS*/
+
+#voucher-container
+{
+	
+	margin: 0 auto;
+	background-color: rgba(102, 0, 102, .9);
+	padding: 2em;
+	/*background-color: #4d004d;*/
+
+}
+
+.voucher-request
+{
+	display: none;
+	padding: .25em;
+	border: 1px solid #fff;
+	margin: 1em auto;
+	color: #fff;
+}
+#gift-vouchers
+{
+	width: 80%;
+	display: inline-block;
+	margin: 0 auto;
+    padding: 2em;
+}
+#voucher-front
+{
+	width: 100%;
+}
+ul#voucher-list
+{
+	display: inline-block;
+	width: 100%;
+}
+ul#voucher-list li.voucher
+{
+	display: inline-block;
+	float: left;
+	width: 50%;
+	background-color: white;
+	border: 1px solid #4d004d;
+	padding: .25em;
+}
+
+ul#voucher-list li img
+{
+	
+	width: 100%;
+	height: auto;
+}
+
+#buy-now-container
+{
+	width: 100%;
+	height: 200px;
+	padding: 1em;
+	margin: 0 auto;
+}
+a.hover
+{
+	color: #068bfc;
+}
+
+#buy-now-container select
+{
+	margin-top: .5em;
+    color:  #4d004d;
+    width: 100%;
+
+}
+
+#buy-now-container option
+{
+	color:  #4d004d;
+}
+
+#buy-now-container option.special
+{
+	color: #ff0000;
+}
+
+#buy-now-container form input
+{
+	margin: .5em auto;
+}
+
+/*CONTACT DETAILS*/
+
+span.contact
+{
+
+	margin: .2em;
+
+}
+#details
+{
+	text-align: left;
+}
+.hidden-break
+{
+	display:none;
+	margin-bottom: 1em;
+}
+footer
+{
+	margin-top: 2em;
+	padding: 2em;
+	width: 100%;
+	display: inline-block;
+	background-color: rgba(108,0,108,.8);
+	color: #fff;
+
+}
+footer h3
+{
+	font-family:'Champagne','Comfortaa',sans-serif;
+	font-size: 1.75em;
+	color: #fff;
+}
+#footer-details-container
+{
+	display: inline-block;
+	margin-top: 1.5em;
+	width: 100%;
+}
+#booking-info
+{
+	margin: 3em auto;
+}
+#booking-info h2
+{
+	margin: 1em 0;
+}
+.details
+	{
+		width: 33%;
+		display: inline-block;
+		float: left;
+	}
+.details h3
+{
+	display: inline-block;
+	min-height: 65px;
+}
+.contact-icon
+{
+	margin: .5em;
+	padding: .5em .3em .3em .3em;
+	font-size: 2.75em;
+	color: #fff;
+	border: 1px solid #fff;
+	border-radius: 20px;
+
+}
+#contact-icons
+{
+	display: inline-block;
+	padding: 2em;
+	margin-bottom: 1em;
+	width: 100%;
+}
+/*SOCIAL MEDIA*/
+
+.social-media
+{
+	
+}
+span.icon
+{
+	display: inline-block;
+	
+	max-width: 30px;
+}
+span.icon.header
+{
+	width: 100%;
+	display: block;
+	/*float: left;
+	max-width: 25px;
+	margin: .25em 0 0 .25em;*/
+}
+.social-media-container-header
+{
+	width: 5%;
+	position: absolute;
+	top: 40px;
+	left: 5px;
+}
+
+input.submit-btn
+{
+	width: 150px;
+	color: #fff;
+	background-color: rgba(108, 0, 108, 1);
+	padding: 2%;
+	border: 1px solid #fff;
+}
+
+/*	WP CONTACT FORM LITE   */
+#contact-form
+
+{
+	width: 70%;
+	padding: 2em .75em;
+	text-align: center;
+	margin: 0 auto;
+	background-color: rgba(100,0,100,.9);
+}
+div.wpforms-container-full .wpforms-form .wpforms-field .wpforms-field-row:last-of-type
+{
+	margin: 0 auto;
+}
+#wpforms-67-field_2
+{
+	max-width: 60%;
+}
+
+#wpforms-67 input
+{
+	margin: 0 auto;
+	color: #4d004d;
+}
+
+div.wpforms-container-full .wpforms-form textarea.wpforms-field-medium
+{
+	
+	height: 100%;
+	color: #4d004d;
+	margin: 0 auto;
+}
+
+input.submit-btn
+{
+	width: 150px;
+	color: #fff;
+	background-color: rgba(108, 0, 108, 1);
+	padding: 2%;
+	border: 1px solid #fff;
+}
+
+
+/*TREATMENTS*/
+
+
+#treatments
+{
+	padding-top: 3em;
+}
+#treatments h1
+{
+	font-size: 3em;
+}
+#treatments h2
+{
+	font-size: 2em;
+}
+
+.treatment
+{
+	width: 80%;
+	max-width: 960px;
+	/*min-height: 350px;*/
+	margin:0;
+	display: inline-block;
+	position: relative;
+	background-color: rgba(108,0,108,.75);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border:2px solid rgb(100, 0, 100);
+	padding-bottom: 2em;
+}
+.treatment-container 
+{
+	width: 100%;
+}
+.header-row
+{
+	width: 100%;
+}
+.treatment-header
+{
+	width: 100%;
+	background-color: rgba(108, 0, 108, 1);
+	text-align: center;
+	margin-bottom: 1em;
+	padding: 0;
+
+}
+.treatment-header h2
+{
+
+	font-family: 'Champagne','Comfortaa', sans-serif;
+	padding: .25em;
+	text-align: center;
+	color: #fff;
+	margin: 0 auto 1em auto;
+}
+.treatment-content
+{
+
+	padding: 0 2em;
+}
+
+h3.treatment-tag
+{
+	font-size: 1.25em;
+	font-family: 'Champagne','Comfortaa', sans-serif;
+	color: #fff;
+	padding: 0 1em 0 1em;
+	margin-bottom: 1em;
+
+}
+.tag-row
+{
+	margin: 2em 0;
+}
+.price-container
+{
+	width: 40%;
+	display: inline-block;
+	float: left;
+}
+.treatment-description
+{
+	text-align: left;
+	padding: 1em 3em;
+	margin: 1em auto;
+	display: inline-block;
+	height: 100%;
+	box-sizing:border-box;
+	color: #fff;
+}
+a.skinbase
+{
+	color: #f885ff;
+} 
+.image-container
+{
+
+	width: 60%;
+	height: 240px;
+	display: inline-block;
+	float: left;
+	border: 1px solid #fff;
+     background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.image-container img
+{
+	
+	
+}
+hr.treatment-hr
+{
+	color: rgba(255,255,255,1);
+}
+.info-container
+{
+	
+	color: #fff;
+}
+ul.item-price li
+{
+	margin: 1em auto;
+}
+.treatment-prices
+{
+	margin: 0;
+	display: inline-block;
+	padding: 2em;
+	box-sizing:border-box;
+	color: #fff;
+	/*color: rgb(108, 0, 108);*/
+	background-color: transparent;
+}
+.treatments-page.price-reveal
+	{
+		margin-top: 4em;
+	}
+#table-container 
+{
+	display: inline-block;
+	float: left;
+}
+ul.hotstone-benefits  
+{
+	 margin-top: 2em;
+}
+ul.hotstone-benefits  li
+{
+	margin-top: 1em;
+	 list-style: disc;
+	 text-align:left;
+}
+ul.hotstone-benefits h3
+{
+	font-size: 2em;
+	color: #fff;
+	padding-bottom: .5em;
+}
+.price-row
+{
+	display: none;
+}
+/*PRICE BUTTON*/
+
+.treatment-container .price-reveal
+{
+	border: 1px solid #fff;
+	font-family: 'Champagne','Comfortaa',sans-serif;
+	color: #fff;
+	background-color: transparent;
+	font-size: 1em;
+}
+
+
+table
+{
+	margin: 0 auto;
+}
+th
+{
+	text-align: left;
+	padding: .25em;
+	margin-right: 2em;
+}
+/*BOOKING*/
+#booking
+{
+	
+	box-sizing:border-box;
+	padding: .5em;
+	text-align: center;
+	display: inline-block;
+	
+}
+button.booking 
+{
+	display: inline-block;
+	/*width: 100px;
+	height:40px;*/
+}
+input
+{
+
+	display: block;
+}
+/*SPECIALS*/
+.specials
+{
+	font-family: 'Champagne';
+	max-width: 960px;
+	width: 90%;
+	margin: 4em 0 0 0;
+	display: inline-block;
+}
+.specials-container
+{
+	/*margin:2em auto;*/
+	background-color: #fff;
+	width: 90%;
+	height: 100%;
+	display: inline-block;	
+	border:2px solid rgb(100, 0, 100);
+	
+}
+.specials-header
+{
+	
+	padding: 1em;
+	background-color: rgba(108, 0, 108, 1);
+}
+.specials-description
+{
+	display: inline-block;
+	height: 100%;
+	padding: 2em;
+	box-sizing:border-box;
+	color: rgb(108, 0, 108);
+	background-color: #fff;
+} 
+.specials-description p
+{
+	color: rgb(108, 0, 108);
+	font-size: 1.15em;
+	margin: 2em auto;
+	width:80%;
+}
+.specials-description h3
+{
+	font-weight:bold
+	margin-top: .5em;
+}
+.specials-prices
+{
+	padding: 2em;
+	box-sizing:border-box;
+	color: rgb(108, 0, 108);
+	background-color: #fff;
+}
+#table-container 
+{
+	display: inline-block;
+	float: left;
+}
+
+
+
+
+
+@media screen and (max-width: 960px){        /*  SMALL LAPTOP  */
+
+	body
+	{
+		background-image: url(img/bg-stones-md.jpg);
+		background-position: top center;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: initial;
+	}
+
+	h2 
+	{
+		font-size:2.35em;
+		margin-bottom: .5em;
+	}
+
+	h3 
+	{
+		font-size: 1.4em;
+		margin-bottom: 1em;
+	}
+	h4
+	{ 
+		color: #fff;
+		font-size: 1.15em;
+	}
+	ul#menu-primary-navigation li 
+	{
+		
+		padding-bottom: .25em;
+		font-size: 1em;
+	
+	}
+	
+	.tagline-info /*TAG UNDER H2 ELEMENTS (FRONT PAGE)*/
+	{
+		font-size: 1.45em;
+		margin-bottom: 1em;
+	}
+	.item-container .text 
+	{
+		padding: .5em;
+	}
+	#waxing-container .treatment-col
+	{
+		width: 50%;
+	}
+	
+}
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 768px){        /*  TABLET  */
+
+	body
+	{
+		background-image: url(img/bg-stones-sm.jpg);
+		background-position: top center;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: initial;
+	}
+
+	/*SOCIAL MEDIA*/
+
+
+span.icon
+{
+	display: inline-block;
+	
+	max-width: 30px;
+}
+span.icon.header
+{
+	width: 30%;
+	display: inline-block;
+	float: left;
+	max-width: 25px;
+	margin: .25em 0 0 .25em;
+}
+.social-media-container-header
+{
+	width: 30%;
+	position: absolute;
+	top: .1em;
+	left: .1em;
+}
+
+	
+	#logo
+	{
+		max-width: 400px;
+	}
+
+
+	h1 
+	{
+		font-size: 3.25em;
+	}
+	h2 
+	{
+		font-size:2.15em;
+		margin-bottom: .5em;
+	}
+
+	h3 
+	{
+		font-size: 1.35em;
+		margin-bottom: 1em;
+	}
+	h4
+	{ 
+		color: #fff;
+		font-size: 1.1em;
+	}
+	p
+	{
+		font-size: .9em;
+	}
+	.tagline-info /*TAG UNDER H2 ELEMENTS (FRONT PAGE)*/
+	{
+		font-size: 1.35em;
+		margin-bottom: 1em;
+	}
+
+
+
+/* FEATURED TREATMENTS */
+		
+
+	#features
+	{
+		margin: 0 auto;
+		width: 90%;
+	}
+	.feature 
+	{
+		
+		position: relative;
+		min-height: 150px;
+		width: 50%;
+		background-color: rgba(108,0,108,.9);
+		display: inline-block;
+		float: left;
+		margin: 0 auto;		
+		color: #ffffff;
+		box-sizing:border-box;
+		vertical-align: top;
+		border: 1px solid #984bad;
+	}
+	.feature h2 
+	{
+		font-size: 2.2em;
+
+	}
+	.feature p
+	{
+		font-size: .75em;
+	}
+	a.feature-link
+	{
+		font-size: 1em;
+	}
+	.treatment-btn-container 
+	{
+		margin:0 auto;
+		text-align: center;
+	}
+	.treatment-container .price-reveal 
+	{
+		font-size: .8em;
+	}
+
+	#waxing-container .treatment-col
+	{
+		width: 50%;
+	}
+
+	/*TREATMENT CATEGORIES*/
+	.text-content
+	{
+		min-height: 18em;
+	}
+	.item-container .text
+	{
+		min-height: 8em;
+	}
+	ul.item-price
+	{
+		margin: 2.5em auto;
+	}
+	.voucher-request
+	{
+		display: inline-block;
+	}
+	
+	footer .container
+	{
+		width: 100%;
+	}
+	.container
+	{
+		margin-right: 0;
+	}
+	.image-container
+	{
+		height: 200px;
+	}
+	.treatment-link 
+	{
+		font-size: 1em;
+	}
+
+
+}
+
+@media screen and (max-width:640px){         /* MOBILE DEVICE */
+
+	ul#menu-primary-navigation li 
+	{
+		display: block;
+	
+	}
+	span.icon.header
+	{
+		max-width: 15px;
+	}
+	.social-media-container-header
+	{
+		width: 30%;
+		position: absolute;
+		top: .3em;
+		left: .3em;
+	}
+	
+	#features
+	{
+		padding: 0;
+		margin: 0 auto;
+		width: 100%;
+	}
+	.feature
+	{
+		
+		margin-bottom: 0;
+	}
+	.details
+	{
+		margin-bottom: 2em; 
+		width: 100%;
+	}
+	.details h3
+	{
+
+		padding-bottom: 0;
+		margin-bottom: .5em;
+		min-height: 40px;
+		
+	}
+	.item-container
+	{
+		margin-bottom: 1em;
+	}
+	.item-container p
+	{
+		font-size: .75em;
+	}
+	.treatment-col
+	{
+		margin-bottom: .35em;
+	}
+	.container
+	{
+		margin-right: 0;
+	}
+
+	.hidden-break
+	{
+		display: block;
+		margin-bottom: 1em;
+	}
+	#gift-vouchers
+	{
+		width: 100%;
+		padding: 1em;
+	}
+
+	.specials
+	{
+		width: 100%;
+	}
+	.specials-container
+	{
+		width: 95%;
+	}
+	
+}
+@media screen and (max-width: 600px){
+
+	#contact-form
+	{
+		width: 100%;
+	}
+	#wpforms-67-field_2
+	{
+		max-width: 100%;
+	}
+
+
+	.treatment-col
+	{
+		width: 95%;
+	}
+	#waxing-container .treatment-col
+	{
+		width: 95%;
+	}
+	#eye-treatments .treatment-col.eye-treatments
+	{
+		width: 95%;
+	}
+
+}
+@media screen and (max-width:579px){            /*MEDIUM-SMALL MOBLIE*/
+
+	.image-container
+	{
+		width: 100%;
+	}
+	#buy-now-container
+	{	
+		
+		padding: 0;
+		
+	}
+
+}
+@media screen and (max-width:533px) {
+
+	#buy-now-container select
+	{
+		width: 80%;
+	}
+}
+@media screen and (max-width:480px){
+
+	body
+	{
+		background-image: url(img/bg-stones-xs.jpg);
+		background-position: top center;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+	p#logo-tag
+	{
+		font-size: 1.1em;
+	}
+}
+@media screen and (max-width:414px){
+
+	.treatment-container h2
+	{
+		font-size: 1.75em;
+	}
+
+
+	/*FEATURES*/
+
+	#features
+	{
+		width: 95%;
+	}
+
+	.feature-txt-container h3
+	{
+		margin: .5em 0 0 0;
+	}
+	.feature
+	{
+		width: 100%;
+		margin-bottom: .25em;
+		min-height: 150px;
+	}
+	.feature-inner
+	{
+		min-height: 150px;
+	}
+
+	/*TREATMENTS*/
+
+	.treatment-col
+	{
+		width: 100%;
+	}
+	.treatment-container h2
+	{
+		font-size: 1.75em;
+	}
+	.heading-container h3
+	{
+		font-size: 1.2em;
+	}
+
+}
+@media screen and (max-width:400px){ 			/*SMALL MOBLILE DEVICE */
+
+
+	.logo-img
+	{
+		max-width: 250px;
+		margin: 0 auto;
+	}
+
+	.featured-treatment 
+	{
+		position: relative;
+		width: 100%;	
+		display: inline-block;
+		margin-top: .5em;
+		color: #ffffff;
+		box-sizing:border-box;
+		vertical-align: top;
+		border: 1px solid #984bad;
+		padding: 0;
+	}
+	.treatment-btn 
+	{
+		background-color: transparent;
+		font-family: 'Arial';
+		font-size: 1em;
+		color: rgb(108,0,108);	
+		padding: 1%;
+	}
+	.treatment
+	{
+		width: 95%;
+	    position: relative;   
+	    text-align: center;
+	    display: inline-block;
+	    margin: 0 auto;	    
+	     
+	}
+	.treatment-col
+	{
+		width: 100%;
+		display: inline-block;
+		float: left;
+	}
+	.image-container
+	{
+		width: 100%;
+	}
+	#treatments
+	{
+		padding-top: 3em;
+	}
+	#treatments h1
+	{
+		font-size: 2.5em;
+	}
+
+}
+@media screen and (max-width:360px){
+
+	.treatment
+	{
+		width: 95%;
+	}
+
+	#features
+	{
+		width: 95%;
+	}
+
+	.feature-txt-container h3
+	{
+		margin: .5em 0 0 0;
+	}
+	.feature-inner
+	{
+		min-height: 150px;
+	}
+
+}
+@media screen and (max-width:320px){
+
+	.treatment
+	{
+		width: 95%;
+	}
+
+}
